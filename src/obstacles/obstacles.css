@@ -1,0 +1,28 @@
+.left-obstacle {
+    width:105vw;
+    height: 50vh;
+    position: fixed;
+    top: 68vh;
+    left: -30vw;
+    z-index: 4;
+}
+.left-obstacle div {
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(20deg);
+    background: linear-gradient(30deg, #D993ED 0%, #B87472 100%);
+}
+.right-obstacle {
+    width: 70vw;
+    height: 50vh;
+    top: 73vh;
+    right: -20vw;
+    position: fixed;
+    z-index: 3;
+}
+.right-obstacle div {
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-30deg);
+    background: linear-gradient(30deg, #C27896 0%, #D993ED 100%);
+}

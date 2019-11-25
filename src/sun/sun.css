@@ -1,0 +1,36 @@
+.sun {
+    z-index: 2;
+    position: fixed;
+    width: 20vw;
+    height: 20vw;
+    left: 50vw;
+    top: 20vh;
+    transform: translate(-50%, -100vh);
+    border-radius: 100%;
+    background: linear-gradient(30deg, rgb(163, 20, 63) 0%, rgb(221, 135, 64) 100%);
+}
+.rays {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    opacity: 0;
+    transition: 0.5s all linear;
+    animation: rotation 15s infinite linear;
+}
+.ray {
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    width: 3vw;
+    height: 0.75vh;
+    background: linear-gradient(0deg, rgb(163, 20, 63) 0%, rgb(221, 135, 64) 100%);
+}
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}

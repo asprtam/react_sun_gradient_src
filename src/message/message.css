@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.message {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.384);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+.message > div{
+    margin-top: 50vh;
+    transform: translate(0, -50%);
+}
+.message h1, h2 {
+    width: 100%;
+    text-align: center;
+}
+.message h1 {
+    font-size: 4vw;
+    letter-spacing: 1vw;
+}
+.message h2 {
+    margin-top: 2vw;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+}
